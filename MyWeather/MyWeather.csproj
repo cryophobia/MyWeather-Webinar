@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyWeather</RootNamespace>
+    <AssemblyName>MyWeather</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <IOSDebuggerPort>17988</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchExtraArgs>-v -v -v -v -v </MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.3.0.4\lib\Xamarin.iOS10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.3.0.4\lib\Xamarin.iOS10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.2.5.1.0\lib\Xamarin.iOS10\Plugin.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.2.5.1.0\lib\Xamarin.iOS10\Plugin.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.TextToSpeech.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.TextToSpeech.2.0.0\lib\Xamarin.iOS10\Plugin.TextToSpeech.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.TextToSpeech">
+      <HintPath>..\packages\Xam.Plugins.TextToSpeech.2.0.0\lib\Xamarin.iOS10\Plugin.TextToSpeech.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\xamarin.ios10\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\xamarin.ios10\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\xamarin.ios10\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Support.iOS">
+      <HintPath>..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer">
+      <HintPath>..\packages\Humanizer.Core.2.1.0\lib\netstandard1.0\Humanizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.7\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface">
+      <HintPath>..\packages\Acr.UserDialogs.6.3.7\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.3.0\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.2.3.0\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\38mm Home Screen.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\42mm Long Look.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\38mm Short Look.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\42mm Short Look.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\38mm Notification.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\42mm Notification.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyWeather.Shared\MyWeather.Shared.csproj">
+      <Project>{061A9C73-EA83-44CB-B907-0A6384102A83}</Project>
+      <Name>MyWeather.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\oval_blue.png" />
+    <BundleResource Include="Resources\oval_blue%402x.png" />
+    <BundleResource Include="Resources\oval_blue%403x.png" />
+    <BundleResource Include="Resources\oval_image.png" />
+    <BundleResource Include="Resources\oval_image%402x.png" />
+    <BundleResource Include="Resources\oval_image%403x.png" />
+    <BundleResource Include="Resources\oval_white.png" />
+    <BundleResource Include="Resources\oval_white%402x.png" />
+    <BundleResource Include="Resources\oval_white%403x.png" />
+    <BundleResource Include="Resources\refresh.png" />
+    <BundleResource Include="Resources\refresh%402x.png" />
+    <BundleResource Include="Resources\refresh%403x.png" />
+    <BundleResource Include="Resources\01_blue.png" />
+    <BundleResource Include="Resources\01_blue%402x.png" />
+    <BundleResource Include="Resources\01_blue%403x.png" />
+    <BundleResource Include="Resources\01.png" />
+    <BundleResource Include="Resources\01%402x.png" />
+    <BundleResource Include="Resources\01%403x.png" />
+    <BundleResource Include="Resources\02_blue.png" />
+    <BundleResource Include="Resources\02_blue%402x.png" />
+    <BundleResource Include="Resources\02_blue%403x.png" />
+    <BundleResource Include="Resources\02.png" />
+    <BundleResource Include="Resources\02%402x.png" />
+    <BundleResource Include="Resources\02%403x.png" />
+    <BundleResource Include="Resources\03_blue.png" />
+    <BundleResource Include="Resources\03_blue%402x.png" />
+    <BundleResource Include="Resources\03_blue%403x.png" />
+    <BundleResource Include="Resources\03.png" />
+    <BundleResource Include="Resources\03%402x.png" />
+    <BundleResource Include="Resources\03%403x.png" />
+    <BundleResource Include="Resources\04_blue.png" />
+    <BundleResource Include="Resources\04_blue%402x.png" />
+    <BundleResource Include="Resources\04_blue%403x.png" />
+    <BundleResource Include="Resources\04.png" />
+    <BundleResource Include="Resources\04%402x.png" />
+    <BundleResource Include="Resources\04%403x.png" />
+    <BundleResource Include="Resources\05_blue.png" />
+    <BundleResource Include="Resources\05_blue%402x.png" />
+    <BundleResource Include="Resources\05_blue%403x.png" />
+    <BundleResource Include="Resources\05.png" />
+    <BundleResource Include="Resources\05%402x.png" />
+    <BundleResource Include="Resources\05%403x.png" />
+    <BundleResource Include="Resources\06_blue.png" />
+    <BundleResource Include="Resources\06_blue%402x.png" />
+    <BundleResource Include="Resources\06_blue%403x.png" />
+    <BundleResource Include="Resources\06.png" />
+    <BundleResource Include="Resources\06%402x.png" />
+    <BundleResource Include="Resources\06%403x.png" />
+    <BundleResource Include="Resources\07_blue.png" />
+    <BundleResource Include="Resources\07_blue%402x.png" />
+    <BundleResource Include="Resources\07_blue%403x.png" />
+    <BundleResource Include="Resources\07.png" />
+    <BundleResource Include="Resources\07%402x.png" />
+    <BundleResource Include="Resources\07%403x.png" />
+    <BundleResource Include="Resources\08_blue.png" />
+    <BundleResource Include="Resources\08_blue%402x.png" />
+    <BundleResource Include="Resources\08_blue%403x.png" />
+    <BundleResource Include="Resources\08.png" />
+    <BundleResource Include="Resources\08%402x.png" />
+    <BundleResource Include="Resources\08%403x.png" />
+    <BundleResource Include="Resources\01_white.png" />
+    <BundleResource Include="Resources\01_white%402x.png" />
+    <BundleResource Include="Resources\01_white%403x.png" />
+    <BundleResource Include="Resources\02_white.png" />
+    <BundleResource Include="Resources\02_white%402x.png" />
+    <BundleResource Include="Resources\02_white%403x.png" />
+    <BundleResource Include="Resources\03_white.png" />
+    <BundleResource Include="Resources\03_white%402x.png" />
+    <BundleResource Include="Resources\03_white%403x.png" />
+    <BundleResource Include="Resources\04_white.png" />
+    <BundleResource Include="Resources\04_white%402x.png" />
+    <BundleResource Include="Resources\04_white%403x.png" />
+    <BundleResource Include="Resources\05_White.png" />
+    <BundleResource Include="Resources\05_White%402x.png" />
+    <BundleResource Include="Resources\05_White%403x.png" />
+    <BundleResource Include="Resources\06_white.png" />
+    <BundleResource Include="Resources\06_white%402x.png" />
+    <BundleResource Include="Resources\06_white%403x.png" />
+    <BundleResource Include="Resources\07_white.png" />
+    <BundleResource Include="Resources\07_white%402x.png" />
+    <BundleResource Include="Resources\07_white%403x.png" />
+    <BundleResource Include="Resources\08_white.png" />
+    <BundleResource Include="Resources\08_white%402x.png" />
+    <BundleResource Include="Resources\08_white%403x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedRGB" red="0.23137254901960785" green="0.47843137254901963" blue="0.85490196078431369" alpha="1"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="01_white.png">
+                                <rect key="frame" x="249.5" y="249.5" width="101" height="101"/>
+                                <constraints>
+                                    <constraint id="6" firstItem="3" firstAttribute="height" constant="101"/>
+                                    <constraint id="7" firstItem="3" firstAttribute="width" constant="101"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4" firstItem="Ze5-6b-2t3" firstAttribute="centerX" secondItem="3" secondAttribute="centerX"/>
+                            <constraint id="5" firstItem="Ze5-6b-2t3" firstAttribute="centerY" secondItem="3" secondAttribute="centerY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="oval_blue.png" width="64" height="64"/>
+        <image name="oval_image.png" width="251" height="422"/>
+        <image name="oval_white.png" width="60" height="60"/>
+        <image name="refresh.png" width="22" height="22"/>
+        <image name="01_blue.png" width="32" height="32"/>
+        <image name="01.png" width="32" height="32"/>
+        <image name="02_blue.png" width="32" height="32"/>
+        <image name="02.png" width="32" height="32"/>
+        <image name="03_blue.png" width="31" height="31"/>
+        <image name="03.png" width="31" height="31"/>
+        <image name="04_blue.png" width="32" height="32"/>
+        <image name="04.png" width="32" height="32"/>
+        <image name="05_blue.png" width="32" height="27"/>
+        <image name="05.png" width="32" height="27"/>
+        <image name="06_blue.png" width="30" height="32"/>
+        <image name="06.png" width="30" height="32"/>
+        <image name="07_blue.png" width="32" height="32"/>
+        <image name="07.png" width="32" height="32"/>
+        <image name="08_blue.png" width="29" height="30"/>
+        <image name="08.png" width="29" height="30"/>
+        <image name="01_white.png" width="100" height="100"/>
+        <image name="02_white.png" width="98" height="96"/>
+        <image name="03_white.png" width="96" height="95"/>
+        <image name="04_white.png" width="96" height="100"/>
+        <image name="05_White.png" width="100" height="82"/>
+        <image name="06_white.png" width="92" height="101"/>
+        <image name="07_white.png" width="98" height="98"/>
+        <image name="08_white.png" width="88" height="91"/>
+    </resources>
+</document>

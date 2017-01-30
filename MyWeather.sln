@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather", "MyWeather\MyWeather.csproj", "{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather.Shared", "MyWeather.Shared\MyWeather.Shared.csproj", "{061A9C73-EA83-44CB-B907-0A6384102A83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Release|iPhone.ActiveCfg = Release|iPhone
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Release|iPhone.Build.0 = Release|iPhone
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{332A6301-D9FB-4D43-BFA4-AD6B14A256A5}.Debug|iPhone.Build.0 = Debug|iPhone
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Release|iPhone.Build.0 = Release|Any CPU
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{061A9C73-EA83-44CB-B907-0A6384102A83}.Debug|iPhone.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
