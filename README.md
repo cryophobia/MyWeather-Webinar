@@ -4,7 +4,7 @@ A demo application forming part of the [Xamarin University Webinar Series: Xamar
 The Demo iOS application is built with [Xamarin](http://xamarin.com) to query OpenWeatherMap.org and gather weather for a current location. 
 
 The application is based on [MyWeather.Forms](https://github.com/jamesmontemagno/MyWeather.Forms) by James Montemagno.
-The app is built with C# 6 features and you must be running VS 2015 or Xamarin Studio to compile.
+The app is built with C# 6 features and you must be running VS 2015 or Visual Studio for Mac / Xamarin Studio to compile.
 
 ## Open source libraries
 The following amazing libraries were used to create this app:
